@@ -1,0 +1,40 @@
+h1, h2, h3, h4, h5, h6, p, body, html, ul, li, a, iframe, img {
+    margin: 0px;
+    padding: 0px;
+}
+
+button {
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: auto;
+    overflow: visible;
+    color: inherit;
+    font: inherit;
+}
+
+select {
+    line-height: normal;
+    position: relative;
+    box-shadow: none;
+    border: none;
+}
+
+body {
+    font-family: "Fira Sans", Arial, sans-serif;
+    color: #0B0C12;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}

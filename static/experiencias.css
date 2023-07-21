@@ -1,0 +1,161 @@
+.container-master-exp {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0px 240px;
+    position: relative;
+}
+
+.formacoes::after {
+    content: "";
+    min-height: 1070px;
+    width: 2px;
+    border-right: 2px solid #0B0C12;
+    position: absolute;
+    top: 0px;
+    left: calc(49vw - 240px);
+    z-index: -1;
+}
+
+.formacoes {
+    margin-right: 80px;
+    min-height: fit-content;
+}
+
+.experiencias {
+    margin-left: 80px;
+}
+
+.exp {
+    margin-bottom: 70px;
+}
+
+.exp h2 {
+    font-family: "Fira Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.5rem;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.idiomas h2 {
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.idiomas span {
+    color: #474D59;
+    padding: 0px 10px;
+}
+
+.idiomas ul li {
+    margin: 10px 0px;
+}
+
+.xp-container {
+    background: #F5F7FA;
+    border-radius: 5px;
+    padding: 25px 30px;
+    margin-bottom: 30px;
+}
+
+.xp-container h3 {
+    position: relative;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 1.125rem;
+    line-height: 1;
+}
+
+.xp-container h3::before {
+    content: "";
+    height: 1.125rem;
+    width: 4px;
+    background: #1182FE;
+    position: absolute;
+    top: 0px;
+    left: -34px;
+}
+
+.xp-container p {
+    color: #474D59;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1.5;
+}
+
+.ano-label {
+    color: #474D59;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    line-height: 1;
+    text-align: end;
+}
+
+.grid-xp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+@media (max-width: 1800px) {
+    .formacoes::after {
+        min-height: 1200px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .formacoes::after {
+        display: none;
+    }
+}
+
+@media (max-width: 1250px) {
+    .container-master-exp {
+        grid-template-columns: 1fr;
+        margin: 0px 10vw;
+    }
+
+    .exp {
+        margin-bottom: 40px;
+    }
+
+    .experiencias {
+        margin-left: 0px;
+        margin-bottom: 70px;
+    }
+
+    .exp {
+        margin-bottom: 0px;
+    }
+
+    .formacoes {
+        margin: 0px;
+    }
+}
+
+@media (max-width: 600px) {
+    .xp-container h3 {
+        font-size: 1rem;
+        line-height: 1;
+    }
+
+    .xp-container p {
+        font-size: 0.785rem;
+        line-height: 1.4;
+    }
+
+    .exp h2 {
+        font-size: 1.825rem;
+        margin-top: 50px;
+        margin-bottom: 30px;
+    }
+
+    .ano-label {
+        font-size: 0.785rem;
+    }
+}

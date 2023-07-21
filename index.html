@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Gabriel Magalhães - Portfolio</title>
+        <link rel="stylesheet" href="./static/styles.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;600;700&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function(){
+                document.querySelector('#cp-clipboard').addEventListener('click', function(){
+                    //copy text to clipboard on click
+                    navigator.clipboard.writeText("gabm.motion@gmail.com");
+
+                    //Alert the copied text
+                    alert("Texto copiado: gabm.motion@gmail.com");
+                });
+            });
+            
+        </script>
+    </head>
+    <body>
+        <header class="header" id="header">
+            <img id="logo" src="./static/svg/logo-site.svg" alt="Gabriel Magalhaes">
+            <nav>
+                <ul class="header-menu">
+                    <li id="li-sobre"><a href="#sobremim">Sobre mim</a></li>
+                    <li id="li-exp"><a href="#experiencias">Experiências</a></li>
+                    <li id="li-proj"><a href="#projetos">Projetos</a></li>
+                    <li id="li-cont"><a href="#contato">Contato</a></li>
+                    
+                </ul>
+            </nav>
+            <a class="btn-link" href="#contato" id="btn-cont">Contato</a>
+        </header>
+        <main class="intro-main" aria-label="Sobre mim">
+             <section id="#sobremim" class="intro-texto">
+                <h1 class="titulo-main">Olá, eu me chamo Gabriel</h1>
+                <h6 class="subtitulo-main">(motion designer, editor, web designer)</h6>
+                <p>Sou formado em Cinema e Audiovisual pela Universidade Federal da Integração Latino-Americana, 
+                    e atualmente estudo Web Design. No mercado criativo há mais de 4 anos, utilizo ferramentas como 
+                    <strong>After Effects</strong>, <strong>Premiere</strong>, <strong>Illustrator</strong>, 
+                    <strong>Photoshop</strong> e <strong>Figma</strong>, além de, mais recentemente, 
+                    tecnologias como <strong>HTML</strong>, <strong>CSS</strong>, <strong>JavaScript</strong>, 
+                    <strong>Python</strong> e <strong>SQLite</strong>. Espero poder te ajudar com soluções 
+                    criativas para problemas do mundo real.</p>
+             </section>
+             <div class="img-container">
+                <span class="pseudo-span"><img src="./static/png/foto01.png" class="foto-perfil"></span>
+             </div>
+        </main>
+        <section id="experiencias" class="container-master-exp">
+            <article id="formacoes" class="exp formacoes" aria-label="Formações">
+                <h2>Formações</h2>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Motion Design Essencial 2.0</h3>
+                    </div>            
+                    <span></span>
+                    <p>Curso online intensivo ofertado pelo Layer Lemonade, 
+                        com foco em Motion Design utilizando softwares da suite Adobe 
+                        e principios da animação, match cuts, composição, fluxo de trabalho, 
+                         entre outros.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>CS50x Introduction to Computer Science</h3>
+                    </div>
+                    <span></span>
+                    <p>Curso online intensivo ofertado pela Harvard University, 
+                        com foco em introdução a conceitos de ciência da computação, 
+                        como algoritmos e estrutura de dados, e apresentação a tecnologias 
+                        utilizadas no desenvolvimento web.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Premiere: ritmo de edição e manipulando emoções</h3>
+                    </div>
+                    <span></span>
+                    <p>Curso online na plataforma Alura ministrado pelo editor 
+                        Anderson Gaveta sobre técnicas de edição utlizando 
+                        Adobe Premiere.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Bacharel em Cinema e Audiovisual</h3>
+                    </div> 
+                    <span></span>
+                    <p>Curso de graduação ofertado pela Universidade Federal da 
+                        Integração Latino-Americana (UNILA) e concluído em 2018.</p>
+                </div>
+                <section class="idiomas">
+                    <h2>Idiomas</h2>
+                    <ul>
+                        <li>Inglês <span>  <span>/</span>  Avançado</span></li>
+                        <li>Espanhol <span>  <span>/</span> Intermediário</span></li>
+                    </ul>
+                </section>
+            </article>
+            <article class="exp experiencias" aria-label="Experiências">
+                <h2>Experiências</h2>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Motion Design e Editor Freelancer</h3>
+                        <span class="ano-label">2020-atual</span>
+                    </div>
+                    <p>Atuo como Freelancer nas áreas de Edição de Vídeos e 
+                        como Motion Designer. Trabalhei com empresas como a 
+                        Cargill e a Final Level, empresa do segmento de conteúdo 
+                        sobre games para web. Trabalhei com eles em algumas 
+                        ocasiões, inclusive na produção de vídeos para a live 
+                        de comemoração de 1 ano do game Valorant no Brasil.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Editor de Conteúdo Web</h3>
+                        <span class="ano-label">2019-2021</span>
+                    </div>
+                    <p>Atuei como Motion Designer, Editor de Vídeos e
+                        Videomaker. Fui um dos responsáveis pelo conteúdo semanal do
+                        canal do Youtube da Loumar Turismo, e atuei também produzindo
+                        vídeos e animações gráficas para redes sociais e campanhas
+                        publicitárias em diversos formatos.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Workshop de After Effects</h3>
+                        <span class="ano-label">2021</span>
+                    </div>
+                    <p>Atuei como professor de After Effects ao longo de uma semana a
+                        convite do InC, passando com os alunos, através de encontros
+                        diários na plataforma Zoom, as principais funcionalidades e
+                        possibilidades do software da Adobe. Passamos por manipulação de
+                        keyframes e curvas de animação, princípios da animação,
+                        introduções a composição, fluxo de trabalho com pré-comps,
+                        ambiente 3D, vfx, chroma, rotoscopia e efeitos em geral.</p>
+                </div>
+                <div class="xp-container">
+                    <div class="grid-xp">
+                        <h3>Assistente de Fotografia em longa-metragem</h3>
+                        <span class="ano-label">2018</span>
+                    </div>
+                    <p>Atuei como Assistente de Fotografia e Gaffer no longa-metragem
+                        Primeiros Amigos (2018), dirigido por Matheus Benites.</p>
+                </div>
+            </article>
+        </section>
+        
+        <section id="projetos" class="projetos-master">
+            <h2>Projetos</h2>
+            <div class="container-pj left">
+                <h3>Fim de Ano Cargill</h3>
+                <div class="tags">
+                    <span>Edição de Vídeo</span>
+                    <span>Design</span>
+                    <span>Motion Graphics</span>
+                    <span>Premiere</span>
+                    <span>After Effects</span>
+                </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xSbV9tL6Nqw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Vídeo institucional de balanço de Fim de Ano da Cargill, realizado no primeiro semestre de 2023.
+                    Neste projeto, tive a oportunidade de criar o design com base no manual da empresa e em referência
+                fornecida pelo cliente. Uma vez aprovado o design, passamos para as fases de animação, edição de vídeos, sonorização e finalização.</p>
+            </div>
+            <div class="container-pj right">
+                <h3>Copa Rakin de Valorant - Anúncio</h3>
+                <div class="tags">
+                    <span>Edição de Vídeo</span>
+                    <span>Motion Graphics</span>
+                    <span>Sound Design</span>
+                    <span>Premiere</span>
+                    <span>After Effects</span>
+                </div>
+                <iframe src="https://player.vimeo.com/video/559156849?h=b4a6d93fba&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="560" height="315" frameborder="0" allow="autoplay; picture-in-picture" allowfullscreen></iframe>
+                <p>Vídeo de anúncio da Copa Rakin de Valorant feito em parceria com a Final Level.
+                    Funções: Edição de Vídeo, Sound Design e Animações.</p>
+            </div>
+        </section>
+        <section id="contato" class="contatos-master">
+            <img id="arrow" src="./static/svg/Arrow_contato.svg">
+            <h1>Entre em contato</h1>
+            <div class="buttons">
+                <a id="botao-email" href="mailto:gabm.motion@gmail.com"><img src="./static/jpg/botao-email.jpg"></a>
+                <button id="cp-clipboard" type="button"><img src="./static/svg/content_copy_white_24dp.svg"></button>
+            </div>
+        </section>
+        <footer id="footer" class="footer-final">
+            <span>Criado por Gabriel Magalhães. Alguns direitos reservados.</span>
+            <a href="#header">Voltar ao início</a>
+        </footer>
+    </body>
+</html>

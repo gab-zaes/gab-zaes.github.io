@@ -1,0 +1,118 @@
+.intro-main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    border-bottom: 2px solid #0B0C12;
+}
+
+.img-container {
+    display: flex;
+    place-content: center;
+    padding: 100px 0px 140px 0px;
+    position: relative;
+}
+
+.pseudo-span::after {
+    content: "";
+    height: 40px;
+    width: 40px;
+    display: block;
+    position: absolute;
+    background: url(./svg/Arrow2.svg) no-repeat center;
+    z-index: 3;
+    right: 5vw;
+    bottom: 30px;
+}
+
+.pseudo-span::before {
+    content: "";
+    display: block;
+    width: 360px;
+    height: 720px;
+    background: #1182FE;
+    border-radius: 5px;
+    position: absolute;
+    z-index: -1;
+    right: 0px;
+    margin-right: 240px;
+    bottom: 100px;
+}
+
+.intro-texto {
+    display: block;
+    margin-left: 240px;
+}
+
+.intro-texto h1 {
+    font-family: "Poppins", sans-serif;
+    font-size: 4rem;
+    line-height: 1;
+    font-weight: 700;
+}
+
+.intro-texto h6 {
+    font-family: "Fira Sans", sans-serif;
+    font-size: 1.65rem;
+    font-weight: 600;
+    line-height: 1;
+    padding: 10px 0px 40px 0px;
+}
+
+.intro-texto p {
+    color: #636973;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+    font-size: 1.125rem;
+    line-height: 1.67;
+}
+
+.intro-texto strong {
+    color: #0B0C12;
+    font-family: "Poppins", sans-serif;
+    font-weight: bold;
+}
+
+@media (max-width: 1680px) {
+    .pseudo-span::before {
+        display: none;
+    }
+
+    .intro-main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .foto-perfil {
+        width: 320px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .intro-main {
+        grid-template-columns: 1fr;
+    }
+    
+    .img-container {
+        display: none;
+    }
+
+    .intro-texto {
+        margin: 0px;
+        padding: 10vw;
+    }
+}
+
+@media (max-width: 600px) {
+    .intro-texto h1 {
+        font-size: 2.5rem;
+    }
+    
+    .intro-texto h6 {
+        font-size: 1.25rem;
+        padding: 10px 0px 40px 0px;
+    }
+
+    .intro-texto p {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+}
